@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Статистика</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+
+                    <div class="mob-menu">
+                        <form class="header-search">
+                            <input type="text" placeholder="Заявка">
+                            <button class="header-search__btn">
+                                <img src="img/search.svg" alt="">
+                            </button>
+                        </form>
+                        <div class="sidebar-menu">
+                            <div class="text20 bold-text secondary-text">
+                                Личный кабинет
+                            </div>
+
+                            <nav class="sidebar-menu__links">
+
+                                <a href="" class="sidebar-menu__link _active">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.26 18.9V7.1C19.26 5.6 18.62 5 17.03 5H15.99C14.4 5 13.76 5.6 13.76 7.1V18.9" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.26001 18.9V12.1C5.26001 10.6 5.90001 10 7.49001 10H8.53001C10.12 10 10.76 10.6 10.76 12.1V18.9" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2 19H22" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Статистика</span>
+                                </a>
+
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.57007 15.27L15.11 8.72998" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.98001 10.3699C9.65932 10.3699 10.21 9.81923 10.21 9.13992C10.21 8.46061 9.65932 7.90991 8.98001 7.90991C8.3007 7.90991 7.75 8.46061 7.75 9.13992C7.75 9.81923 8.3007 10.3699 8.98001 10.3699Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.52 16.0899C16.1993 16.0899 16.75 15.5392 16.75 14.8599C16.75 14.1806 16.1993 13.6299 15.52 13.6299C14.8407 13.6299 14.29 14.1806 14.29 14.8599C14.29 15.5392 14.8407 16.0899 15.52 16.0899Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Калькулятор процентов</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.6599 10.44L20.6799 14.62C19.8399 18.23 18.1799 19.69 15.0599 19.39C14.5599 19.35 14.0199 19.26 13.4399 19.12L11.7599 18.72C7.58994 17.73 6.29994 15.67 7.27994 11.49L8.25994 7.30001C8.45994 6.45001 8.69994 5.71001 8.99994 5.10001C10.1699 2.68001 12.1599 2.03001 15.4999 2.82001L17.1699 3.21001C21.3599 4.19001 22.6399 6.26001 21.6599 10.44Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.0601 19.39C14.4401 19.81 13.6601 20.16 12.7101 20.47L11.1301 20.99C7.1601 22.27 5.0701 21.2 3.7801 17.23L2.5001 13.28C1.2201 9.31001 2.2801 7.21001 6.2501 5.93001L7.8301 5.41001C8.2401 5.28001 8.6301 5.17001 9.0001 5.10001C8.7001 5.71001 8.4601 6.45001 8.2601 7.30001L7.2801 11.49C6.3001 15.67 7.5901 17.73 11.7601 18.72L13.4401 19.12C14.0201 19.26 14.5601 19.35 15.0601 19.39Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6399 8.53L17.4899 9.76" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.6599 12.4L14.5599 13.14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Заявки</span>
+                                </a>
+
+                            </nav>
+
+                            <nav class="sidebar-menu__links sidebar-menu__links2">
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.74 19.38C16.96 21.01 14.6 22 12 22C9.40001 22 7.04001 21.01 5.26001 19.38C5.36001 18.44 5.96001 17.52 7.03001 16.8C9.77001 14.98 14.25 14.98 16.97 16.8C18.04 17.52 18.64 18.44 18.74 19.38Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Настройки аккаунта</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.9965 11H16.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.9955 11H12.0045" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.99451 11H8.00349" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Поддержка</span>
+                                </a>
+                            </nav>
+                        </div>
+
+                    </div>
+
+                    <div class="header__greet text18 extra-bold-text">
+                        Привет, Иван Иванов!
+                    </div>
+
+                    <button class="burger _toggle-menu">
+                        <img src="img/burger.svg" alt="" class="_view1">
+                        <img src="img/burger2.svg" alt="" class="_view2">
+                    </button>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+            <div class="admin">
+                <div class="admin__scroll">
+                    <div class="admin__top _flex-between">
+                        <h1 class="h1">
+                            Статистика
+                        </h1>
+                    </div>
+                    <div class="stat-items grid grid4 grid-tablet2 grid-mob">
+                        <div class="stat-card">
+                            <div class="stat-card__top">
+                                <div class="text16 bold-text">
+                                    Все заявки
+                                </div>
+                            </div>
+                            <div class="stat-card__items">
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За сегодня
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            190 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        15 436 890 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За 7 дней
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За месяц
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За всё время
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-card__top">
+                                <div class="text16 bold-text">
+                                    Отказанные заявки
+                                </div>
+                            </div>
+                            <div class="stat-card__items">
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За сегодня
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            156 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        10 899 680 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За 7 дней
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За месяц
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За всё время
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-card__top">
+                                <div class="text16 bold-text">
+                                    Одобренные заявки
+                                </div>
+                            </div>
+                            <div class="stat-card__items">
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За сегодня
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            34 заявки
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        4 537 210 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За 7 дней
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За месяц
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За всё время
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-card__top">
+                                <div class="text16 bold-text">
+                                    Подписанные заявки
+                                </div>
+                            </div>
+                            <div class="stat-card__items">
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За сегодня
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            27 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        2 937 210 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За 7 дней
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За месяц
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                                <div class="stat-item">
+                                    <div class="stat-item__info secondary-text">
+                                        <div class="stat-item__title text12">
+                                            За всё время
+                                        </div>
+                                        <div class="stat-item__num text20 bold-text">
+                                            0 заявок
+                                        </div>
+                                    </div>
+                                    <div class="stat-item__price text20 bold-text primary-text">
+                                        0 ₽
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

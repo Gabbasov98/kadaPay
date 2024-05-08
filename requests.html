@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Заявки</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+
+                    <div class="mob-menu">
+                        <form class="header-search">
+                            <input type="text" placeholder="Заявка">
+                            <button class="header-search__btn">
+                                <img src="img/search.svg" alt="">
+                            </button>
+                        </form>
+                        <div class="sidebar-menu">
+                            <div class="text20 bold-text secondary-text">
+                                Личный кабинет
+                            </div>
+
+                            <nav class="sidebar-menu__links">
+
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.26 18.9V7.1C19.26 5.6 18.62 5 17.03 5H15.99C14.4 5 13.76 5.6 13.76 7.1V18.9" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.26001 18.9V12.1C5.26001 10.6 5.90001 10 7.49001 10H8.53001C10.12 10 10.76 10.6 10.76 12.1V18.9" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2 19H22" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Статистика</span>
+                                </a>
+
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.0001 7.16C17.9401 7.15 17.8701 7.15 17.8101 7.16C16.4301 7.11 15.3301 5.98 15.3301 4.58C15.3301 3.15 16.4801 2 17.9101 2C19.3401 2 20.4901 3.16 20.4901 4.58C20.4801 5.98 19.3801 7.11 18.0001 7.16Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.9702 14.44C18.3402 14.67 19.8502 14.43 20.9102 13.72C22.3202 12.78 22.3202 11.24 20.9102 10.3C19.8402 9.59001 18.3102 9.35 16.9402 9.59" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.96998 7.16C6.02998 7.15 6.09998 7.15 6.15998 7.16C7.53998 7.11 8.63998 5.98 8.63998 4.58C8.63998 3.15 7.48998 2 6.05998 2C4.62998 2 3.47998 3.16 3.47998 4.58C3.48998 5.98 4.58998 7.11 5.96998 7.16Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.99994 14.44C5.62994 14.67 4.11994 14.43 3.05994 13.72C1.64994 12.78 1.64994 11.24 3.05994 10.3C4.12994 9.59001 5.65994 9.35 7.02994 9.59" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.0001 14.63C11.9401 14.62 11.8701 14.62 11.8101 14.63C10.4301 14.58 9.33008 13.45 9.33008 12.05C9.33008 10.62 10.4801 9.47 11.9101 9.47C13.3401 9.47 14.4901 10.63 14.4901 12.05C14.4801 13.45 13.3801 14.59 12.0001 14.63Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.08997 17.78C7.67997 18.72 7.67997 20.26 9.08997 21.2C10.69 22.27 13.31 22.27 14.91 21.2C16.32 20.26 16.32 18.72 14.91 17.78C13.32 16.72 10.69 16.72 9.08997 17.78Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Заёмщики</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.7516 16.8604V18.8904C10.7516 20.6104 9.15158 22.0004 7.18158 22.0004C5.21158 22.0004 3.60156 20.6104 3.60156 18.8904V16.8604C3.60156 18.5804 5.20158 19.8004 7.18158 19.8004C9.15158 19.8004 10.7516 18.5704 10.7516 16.8604Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.7501 14.11C10.7501 14.61 10.6101 15.07 10.3701 15.47C9.78006 16.44 8.57004 17.05 7.17004 17.05C5.77004 17.05 4.56003 16.43 3.97003 15.47C3.73003 15.07 3.59009 14.61 3.59009 14.11C3.59009 13.25 3.99007 12.48 4.63007 11.92C5.28007 11.35 6.17003 11.01 7.16003 11.01C8.15003 11.01 9.04006 11.36 9.69006 11.92C10.3501 12.47 10.7501 13.25 10.7501 14.11Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.7516 14.11V16.86C10.7516 18.58 9.15158 19.8 7.18158 19.8C5.21158 19.8 3.60156 18.57 3.60156 16.86V14.11C3.60156 12.39 5.20158 11 7.18158 11C8.17158 11 9.06161 11.35 9.71161 11.91C10.3516 12.47 10.7516 13.25 10.7516 14.11Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M22 10.9699V13.03C22 13.58 21.56 14.0299 21 14.0499H19.0399C17.9599 14.0499 16.97 13.2599 16.88 12.1799C16.82 11.5499 17.0599 10.9599 17.4799 10.5499C17.8499 10.1699 18.36 9.94995 18.92 9.94995H21C21.56 9.96995 22 10.4199 22 10.9699Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2 10.5V8.5C2 5.78 3.64 3.88 6.19 3.56C6.45 3.52 6.72 3.5 7 3.5H16C16.26 3.5 16.51 3.50999 16.75 3.54999C19.33 3.84999 21 5.76 21 8.5V9.95001H18.92C18.36 9.95001 17.85 10.17 17.48 10.55C17.06 10.96 16.82 11.55 16.88 12.18C16.97 13.26 17.96 14.05 19.04 14.05H21V15.5C21 18.5 19 20.5 16 20.5H13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Финансовые организации</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.01001 11.22V15.71C3.01001 20.2 4.81001 22 9.30001 22H14.69C19.18 22 20.98 20.2 20.98 15.71V11.22" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 12C13.83 12 15.18 10.51 15 8.68L14.34 2H9.66999L8.99999 8.68C8.81999 10.51 10.17 12 12 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.31 12C20.33 12 21.81 10.36 21.61 8.35L21.33 5.6C20.97 3 19.97 2 17.35 2H14.3L15 9.01C15.17 10.66 16.66 12 18.31 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.63988 12C7.28988 12 8.77988 10.66 8.93988 9.01L9.15988 6.8L9.63988 2H6.58988C3.96988 2 2.96988 3 2.60988 5.6L2.33988 8.35C2.13988 10.36 3.61988 12 5.63988 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 17C10.33 17 9.5 17.83 9.5 19.5V22H14.5V19.5C14.5 17.83 13.67 17 12 17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Магазины</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link _active">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.0799 8.58003V15.42C21.0799 16.54 20.4799 17.58 19.5099 18.15L13.5699 21.58C12.5999 22.14 11.3999 22.14 10.4199 21.58L4.47991 18.15C3.50991 17.59 2.90991 16.55 2.90991 15.42V8.58003C2.90991 7.46003 3.50991 6.41999 4.47991 5.84999L10.4199 2.42C11.3899 1.86 12.5899 1.86 13.5699 2.42L19.5099 5.84999C20.4799 6.41999 21.0799 7.45003 21.0799 8.58003Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.9999 10.9998C13.2867 10.9998 14.3299 9.95662 14.3299 8.6698C14.3299 7.38298 13.2867 6.33984 11.9999 6.33984C10.7131 6.33984 9.66992 7.38298 9.66992 8.6698C9.66992 9.95662 10.7131 10.9998 11.9999 10.9998Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16 16.6599C16 14.8599 14.21 13.3999 12 13.3999C9.79 13.3999 8 14.8599 8 16.6599" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Пользователи</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.0399 3.01999L8.15988 10.9C7.85988 11.2 7.55988 11.79 7.49988 12.22L7.06988 15.23C6.90988 16.32 7.67988 17.08 8.76988 16.93L11.7799 16.5C12.1999 16.44 12.7899 16.14 13.0999 15.84L20.9799 7.95999C22.3399 6.59999 22.9799 5.01999 20.9799 3.01999C18.9799 1.01999 17.3999 1.65999 16.0399 3.01999Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.9099 4.14999C15.5799 6.53999 17.4499 8.40999 19.8499 9.08999" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Настройки анкеты</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.57007 15.27L15.11 8.72998" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.98001 10.3699C9.65932 10.3699 10.21 9.81923 10.21 9.13992C10.21 8.46061 9.65932 7.90991 8.98001 7.90991C8.3007 7.90991 7.75 8.46061 7.75 9.13992C7.75 9.81923 8.3007 10.3699 8.98001 10.3699Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.52 16.0899C16.1993 16.0899 16.75 15.5392 16.75 14.8599C16.75 14.1806 16.1993 13.6299 15.52 13.6299C14.8407 13.6299 14.29 14.1806 14.29 14.8599C14.29 15.5392 14.8407 16.0899 15.52 16.0899Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Калькулятор процентов</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.6599 10.44L20.6799 14.62C19.8399 18.23 18.1799 19.69 15.0599 19.39C14.5599 19.35 14.0199 19.26 13.4399 19.12L11.7599 18.72C7.58994 17.73 6.29994 15.67 7.27994 11.49L8.25994 7.30001C8.45994 6.45001 8.69994 5.71001 8.99994 5.10001C10.1699 2.68001 12.1599 2.03001 15.4999 2.82001L17.1699 3.21001C21.3599 4.19001 22.6399 6.26001 21.6599 10.44Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.0601 19.39C14.4401 19.81 13.6601 20.16 12.7101 20.47L11.1301 20.99C7.1601 22.27 5.0701 21.2 3.7801 17.23L2.5001 13.28C1.2201 9.31001 2.2801 7.21001 6.2501 5.93001L7.8301 5.41001C8.2401 5.28001 8.6301 5.17001 9.0001 5.10001C8.7001 5.71001 8.4601 6.45001 8.2601 7.30001L7.2801 11.49C6.3001 15.67 7.5901 17.73 11.7601 18.72L13.4401 19.12C14.0201 19.26 14.5601 19.35 15.0601 19.39Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6399 8.53L17.4899 9.76" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.6599 12.4L14.5599 13.14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Заявки</span>
+                                </a>
+
+                            </nav>
+
+                            <nav class="sidebar-menu__links sidebar-menu__links2">
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.74 19.38C16.96 21.01 14.6 22 12 22C9.40001 22 7.04001 21.01 5.26001 19.38C5.36001 18.44 5.96001 17.52 7.03001 16.8C9.77001 14.98 14.25 14.98 16.97 16.8C18.04 17.52 18.64 18.44 18.74 19.38Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Настройки аккаунта</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.9965 11H16.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.9955 11H12.0045" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.99451 11H8.00349" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Поддержка</span>
+                                </a>
+                            </nav>
+                        </div>
+
+                    </div>
+
+                    <div class="header__greet text18 extra-bold-text">
+                        Привет, Иван Иванов!
+                    </div>
+
+                    <button class="burger _toggle-menu">
+                        <img src="img/burger.svg" alt="" class="_view1">
+                        <img src="img/burger2.svg" alt="" class="_view2">
+                    </button>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+            <div class="admin">
+                <div class="admin__scroll">
+                    <div class="admin__top _flex-between">
+                        <h1 class="h1">
+                            Заявки
+                        </h1>
+                    </div>
+
+                    <div class="admin-filter _flex-between">
+                        <div class="admin-filter__search">
+                            <input type="text" placeholder="Поиск">
+                            <button class="admin-filter__search-btn">
+                                <img src="img/search2.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="sort">
+                            <span>По дате регистрации</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4483 6.71997L6.7241 3L3 6.71997" stroke="#033240" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.72412 21V3" stroke="#033240" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.5518 17.28L17.2759 21L21 17.28" stroke="#033240" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.2759 3V21" stroke="#033240" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+
+                    <div class="m-table requests-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="text16">Заявка</div>
+                                    </th>
+                                    <th>
+                                        <div class="text16">Статус</div>
+                                    </th>
+                                    <th>
+                                        <div class="text16">Клиент</div>
+                                    </th>
+                                    <th>
+                                        <div class="text16">Сумма займа</div>
+                                    </th>
+                                    <th>
+                                        <div class="text16">Срок рассрочки</div>
+                                    </th>
+                                    <th>
+                                        <div class="text16">Название ФО</div>
+                                    </th>
+                                    <th>
+                                        <div class="text16">Название и адрес ТТ</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="text16">
+                                            7-4P3GO6JI
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:30
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-badge _yellow">
+                                            <span class="text16">
+                Заявка на рассмотрении
+            </span>
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:32
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Иванов Иван Иванович
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            57 425 ₽
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            6 мес.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Сбербанк
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            ТЦ «Зеркальный Риф» <br>
+            г. Томск, Фрунзе, дом 92, корпус Г <br>
+            Ежедневно с 10:00 до 21:00
+                                        </div>
+                                        <div class="row-action">
+                                            <button class="row-action__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 5C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5C11 5.55 11.45 6 12 6C12.55 6 13 5.55 13 5Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 19C13 18.45 12.55 18 12 18C11.45 18 11 18.45 11 19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 12C13 11.45 12.55 11 12 11C11.45 11 11 11.45 11 12C11 12.55 11.45 13 12 13C12.55 13 13 12.55 13 12Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                </svg>
+                                            </button>
+                                            <div class="row-action__dropdown">
+                                                <button class="row-action__item">
+                                                    Настроить
+                                                </button>
+                                                <button class="row-action__item">
+                                                    Удалить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="text16">
+                                            7-4P3GO6JI
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:30
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-badge _red">
+                                            <span class="text16">
+                Заявка на рассмотрении
+            </span>
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:32
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Иванов Иван Иванович
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            57 425 ₽
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            6 мес.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Сбербанк
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            ТЦ «Зеркальный Риф» <br>
+            г. Томск, Фрунзе, дом 92, корпус Г <br>
+            Ежедневно с 10:00 до 21:00
+                                        </div>
+                                        <div class="row-action">
+                                            <button class="row-action__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 5C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5C11 5.55 11.45 6 12 6C12.55 6 13 5.55 13 5Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 19C13 18.45 12.55 18 12 18C11.45 18 11 18.45 11 19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 12C13 11.45 12.55 11 12 11C11.45 11 11 11.45 11 12C11 12.55 11.45 13 12 13C12.55 13 13 12.55 13 12Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                </svg>
+                                            </button>
+                                            <div class="row-action__dropdown">
+                                                <button class="row-action__item">
+                                                    Настроить
+                                                </button>
+                                                <button class="row-action__item">
+                                                    Удалить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="text16">
+                                            7-4P3GO6JI
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:30
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-badge _green">
+                                            <span class="text16">
+                Заявка на рассмотрении
+            </span>
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:32
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Иванов Иван Иванович
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            57 425 ₽
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            6 мес.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Сбербанк
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            ТЦ «Зеркальный Риф» <br>
+            г. Томск, Фрунзе, дом 92, корпус Г <br>
+            Ежедневно с 10:00 до 21:00
+                                        </div>
+                                        <div class="row-action">
+                                            <button class="row-action__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 5C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5C11 5.55 11.45 6 12 6C12.55 6 13 5.55 13 5Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 19C13 18.45 12.55 18 12 18C11.45 18 11 18.45 11 19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 12C13 11.45 12.55 11 12 11C11.45 11 11 11.45 11 12C11 12.55 11.45 13 12 13C12.55 13 13 12.55 13 12Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                </svg>
+                                            </button>
+                                            <div class="row-action__dropdown">
+                                                <button class="row-action__item">
+                                                    Настроить
+                                                </button>
+                                                <button class="row-action__item">
+                                                    Удалить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="text16">
+                                            7-4P3GO6JI
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:30
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-badge _red">
+                                            <span class="text16">
+                Заявка на рассмотрении
+            </span>
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:32
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Иванов Иван Иванович
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            57 425 ₽
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            6 мес.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Сбербанк
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            ТЦ «Зеркальный Риф» <br>
+            г. Томск, Фрунзе, дом 92, корпус Г <br>
+            Ежедневно с 10:00 до 21:00
+                                        </div>
+                                        <div class="row-action">
+                                            <button class="row-action__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 5C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5C11 5.55 11.45 6 12 6C12.55 6 13 5.55 13 5Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 19C13 18.45 12.55 18 12 18C11.45 18 11 18.45 11 19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 12C13 11.45 12.55 11 12 11C11.45 11 11 11.45 11 12C11 12.55 11.45 13 12 13C12.55 13 13 12.55 13 12Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                </svg>
+                                            </button>
+                                            <div class="row-action__dropdown">
+                                                <button class="row-action__item">
+                                                    Настроить
+                                                </button>
+                                                <button class="row-action__item">
+                                                    Удалить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="text16">
+                                            7-4P3GO6JI
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:30
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="m-badge _green">
+                                            <span class="text16">
+                Заявка на рассмотрении
+            </span>
+                                        </div>
+                                        <div class="text16 secondary-text">
+                                            Сегодня 15:32
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Иванов Иван Иванович
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            57 425 ₽
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            6 мес.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            Сбербанк
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text16">
+                                            ТЦ «Зеркальный Риф» <br>
+            г. Томск, Фрунзе, дом 92, корпус Г <br>
+            Ежедневно с 10:00 до 21:00
+                                        </div>
+                                        <div class="row-action">
+                                            <button class="row-action__btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 5C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5C11 5.55 11.45 6 12 6C12.55 6 13 5.55 13 5Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 19C13 18.45 12.55 18 12 18C11.45 18 11 18.45 11 19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                    <path d="M13 12C13 11.45 12.55 11 12 11C11.45 11 11 11.45 11 12C11 12.55 11.45 13 12 13C12.55 13 13 12.55 13 12Z" fill="#033240" stroke="#033240" stroke-width="1.5" />
+                                                </svg>
+                                            </button>
+                                            <div class="row-action__dropdown">
+                                                <button class="row-action__item">
+                                                    Настроить
+                                                </button>
+                                                <button class="row-action__item">
+                                                    Удалить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

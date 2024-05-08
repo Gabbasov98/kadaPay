@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Анкета поручителя</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+
+                    <div class="mob-menu">
+                        <form class="header-search">
+                            <input type="text" placeholder="Заявка">
+                            <button class="header-search__btn">
+                                <img src="img/search.svg" alt="">
+                            </button>
+                        </form>
+                        <div class="sidebar-menu">
+                            <div class="text20 bold-text secondary-text">
+                                Личный кабинет
+                            </div>
+
+                            <nav class="sidebar-menu__links">
+
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.26 18.9V7.1C19.26 5.6 18.62 5 17.03 5H15.99C14.4 5 13.76 5.6 13.76 7.1V18.9" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.26001 18.9V12.1C5.26001 10.6 5.90001 10 7.49001 10H8.53001C10.12 10 10.76 10.6 10.76 12.1V18.9" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2 19H22" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Статистика</span>
+                                </a>
+
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.57007 15.27L15.11 8.72998" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.98001 10.3699C9.65932 10.3699 10.21 9.81923 10.21 9.13992C10.21 8.46061 9.65932 7.90991 8.98001 7.90991C8.3007 7.90991 7.75 8.46061 7.75 9.13992C7.75 9.81923 8.3007 10.3699 8.98001 10.3699Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.52 16.0899C16.1993 16.0899 16.75 15.5392 16.75 14.8599C16.75 14.1806 16.1993 13.6299 15.52 13.6299C14.8407 13.6299 14.29 14.1806 14.29 14.8599C14.29 15.5392 14.8407 16.0899 15.52 16.0899Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Калькулятор процентов</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link _active">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.6599 10.44L20.6799 14.62C19.8399 18.23 18.1799 19.69 15.0599 19.39C14.5599 19.35 14.0199 19.26 13.4399 19.12L11.7599 18.72C7.58994 17.73 6.29994 15.67 7.27994 11.49L8.25994 7.30001C8.45994 6.45001 8.69994 5.71001 8.99994 5.10001C10.1699 2.68001 12.1599 2.03001 15.4999 2.82001L17.1699 3.21001C21.3599 4.19001 22.6399 6.26001 21.6599 10.44Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.0601 19.39C14.4401 19.81 13.6601 20.16 12.7101 20.47L11.1301 20.99C7.1601 22.27 5.0701 21.2 3.7801 17.23L2.5001 13.28C1.2201 9.31001 2.2801 7.21001 6.2501 5.93001L7.8301 5.41001C8.2401 5.28001 8.6301 5.17001 9.0001 5.10001C8.7001 5.71001 8.4601 6.45001 8.2601 7.30001L7.2801 11.49C6.3001 15.67 7.5901 17.73 11.7601 18.72L13.4401 19.12C14.0201 19.26 14.5601 19.35 15.0601 19.39Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6399 8.53L17.4899 9.76" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.6599 12.4L14.5599 13.14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Заявки</span>
+                                </a>
+
+                            </nav>
+
+                            <nav class="sidebar-menu__links sidebar-menu__links2">
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.74 19.38C16.96 21.01 14.6 22 12 22C9.40001 22 7.04001 21.01 5.26001 19.38C5.36001 18.44 5.96001 17.52 7.03001 16.8C9.77001 14.98 14.25 14.98 16.97 16.8C18.04 17.52 18.64 18.44 18.74 19.38Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Настройки аккаунта</span>
+                                </a>
+                                <a href="" class="sidebar-menu__link ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.9965 11H16.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.9955 11H12.0045" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.99451 11H8.00349" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Поддержка</span>
+                                </a>
+                            </nav>
+                        </div>
+
+                    </div>
+
+                    <div class="header__greet text18 extra-bold-text">
+                        Привет, Иван Иванов!
+                    </div>
+
+                    <button class="burger _toggle-menu">
+                        <img src="img/burger.svg" alt="" class="_view1">
+                        <img src="img/burger2.svg" alt="" class="_view2">
+                    </button>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+            <div class="admin">
+                <div class="admin__scroll">
+                    <div class="admin__top admin__top--flex-mob _flex-between">
+                        <h1 class="h1">
+                            Анкета поручителя
+                        </h1>
+                        <button class="admin__back">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.329 9.36232C10.074 9.12386 9.73678 8.99404 9.38834 9.00021C9.0399 9.00638 8.70745 9.14806 8.46103 9.39541C8.21461 9.64275 8.07346 9.97644 8.06731 10.3262C8.06116 10.6759 8.1905 11.0144 8.42807 11.2703L15.0991 17.9663L8.42807 24.6623C8.29593 24.7859 8.18994 24.935 8.11643 25.1006C8.04292 25.2662 8.0034 25.4449 8.00021 25.6262C7.99702 25.8074 8.03024 25.9875 8.09789 26.1556C8.16553 26.3237 8.26622 26.4764 8.39393 26.6046C8.52165 26.7328 8.67378 26.8338 8.84125 26.9017C9.00872 26.9696 9.1881 27.003 9.36869 26.9998C9.54928 26.9966 9.72738 26.9569 9.89236 26.8831C10.0573 26.8093 10.2058 26.703 10.329 26.5703L17 19.8743L23.671 26.5703C23.7942 26.703 23.9427 26.8093 24.1076 26.8831C24.2726 26.9569 24.4507 26.9966 24.6313 26.9998C24.8119 27.003 24.9913 26.9696 25.1587 26.9017C25.3262 26.8338 25.4784 26.7328 25.6061 26.6046C25.7338 26.4764 25.8345 26.3237 25.9021 26.1556C25.9698 25.9875 26.003 25.8074 25.9998 25.6262C25.9966 25.4449 25.9571 25.2662 25.8836 25.1006C25.8101 24.935 25.7041 24.7859 25.5719 24.6623L18.9009 17.9663L25.5719 11.2703C25.8095 11.0144 25.9388 10.6759 25.9327 10.3262C25.9265 9.97644 25.7854 9.64275 25.539 9.39541C25.2925 9.14806 24.9601 9.00638 24.6117 9.00021C24.2632 8.99404 23.926 9.12386 23.671 9.36232L17 16.0583L10.329 9.36232Z" fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="guarantor-application">
+                        <div class="guarantor-application__col">
+                            <div class="guarantor-application__fields">
+                                <div class="fg _full">
+                                    <label>ФИО</label>
+                                    <input type="text" placeholder="ФИО">
+                                </div>
+                                <div class="fg _full">
+                                    <label>Место работы</label>
+                                    <input type="text" placeholder="Место работы">
+                                </div>
+                                <div class="fg _full">
+                                    <label>Должность</label>
+                                    <input type="text" placeholder="Должность">
+                                </div>
+                                <div class="work-experience _full">
+                                    <div class="text16 bold-text">
+                                        Стаж работы
+                                    </div>
+                                    <div class="work-experience__items">
+                                        <div class="fg date-input">
+                                            <label>Начало работы</label>
+                                            <input readonly type="text" placeholder="22.01.2021 г.">
+                                        </div>
+                                        <div class="fg">
+                                            <label>Стаж работы</label>
+                                            <input type="text" placeholder="3 года 3 месяца">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fg _full">
+                                    <label>Номер руководителя</label>
+                                    <input type="text" placeholder="Номер руководителя">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guarantor-application__col">
+                            <div class="guarantor-application__fields">
+                                <div class="fg _full">
+                                    <label>Ежемесячные доходы</label>
+                                    <input type="text" placeholder="Ежемесячные доходы">
+                                </div>
+                                <div class="fg _full filter-select">
+                                    <label>Адрес прописки</label>
+                                    <input class="filter-select__current" type="text" placeholder="Адрес прописки">
+                                    <div class="filter-select__dropdown">
+                                        <div class="filter-select__options">
+                                            <div class="filter-select__option">
+                                                <input data-value="Адрес" type="radio" name="country">
+                                                <label>Адрес</label>
+                                            </div>
+                                            <div class="filter-select__option">
+                                                <input data-value="Адрес 2" type="radio" name="country">
+                                                <label>Адрес 2</label>
+                                            </div>
+                                            <div class="filter-select__option">
+                                                <input data-value="Адрес 3" type="radio" name="country">
+                                                <label>Адрес 3</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fg _full filter-select">
+                                    <label>Фактический адрес</label>
+                                    <div class="m-check">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span>Совпадает с пропиской</span>
+                                        </label>
+                                    </div>
+                                    <input class="filter-select__current" type="text" placeholder="Фактический адрес">
+                                    <div class="filter-select__dropdown">
+                                        <div class="filter-select__options">
+                                            <div class="filter-select__option">
+                                                <input data-value="Адрес" type="radio" name="country">
+                                                <label>Адрес</label>
+                                            </div>
+                                            <div class="filter-select__option">
+                                                <input data-value="Адрес 2" type="radio" name="country">
+                                                <label>Адрес 2</label>
+                                            </div>
+                                            <div class="filter-select__option">
+                                                <input data-value="Адрес 3" type="radio" name="country">
+                                                <label>Адрес 3</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guarantor-application__bottom">
+                        <button class="guarantor-application__btn m-btn m-btn-black">
+                            <span>Вернуться к анкете</span>
+                        </button>
+                        <div class="guarantor-application__hint text14 secondary-text">
+                            Нажимая на кнопку далее вы принимаете <a href="">условия передачи информации</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

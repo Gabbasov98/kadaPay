@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Анкета поручителя</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header2">
+            <a href="" class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+        </header>
+        <main class="content">
+            <div class="application-page application-page2">
+                <h1 class="h1">
+                    Анкета поручителя
+                </h1>
+                <div class="form-group">
+                    <div class="form-group__inner">
+                        <div class="form-group__fields">
+                            <div class="fg _full">
+                                <label>ФИО</label>
+                                <input type="text" placeholder="ФИО">
+                            </div>
+                            <div class="fg _full">
+                                <label>Место работы</label>
+                                <input type="text" placeholder="Место работы">
+                            </div>
+                            <div class="fg _full">
+                                <label>Должность</label>
+                                <input type="text" placeholder="Должность">
+                            </div>
+                            <div class="work-experience _full">
+                                <div class="text16 bold-text">
+                                    Стаж работы
+                                </div>
+                                <div class="work-experience__items">
+                                    <div class="fg date-input">
+                                        <label>Начало работы</label>
+                                        <input readonly type="text" placeholder="22.01.2021 г.">
+                                    </div>
+                                    <div class="fg">
+                                        <label>Стаж работы</label>
+                                        <input type="text" placeholder="3 года 3 месяца">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fg _full">
+                                <label>Ежемесячные доходы</label>
+                                <input type="text" placeholder="Ежемесячные доходы">
+                            </div>
+                            <div class="fg _full filter-select">
+                                <label>Адрес прописки</label>
+                                <input class="filter-select__current" type="text" placeholder="Адрес прописки">
+                                <div class="filter-select__dropdown">
+                                    <div class="filter-select__options">
+                                        <div class="filter-select__option">
+                                            <input data-value="Адрес" type="radio" name="country">
+                                            <label>Адрес</label>
+                                        </div>
+                                        <div class="filter-select__option">
+                                            <input data-value="Адрес 2" type="radio" name="country">
+                                            <label>Адрес 2</label>
+                                        </div>
+                                        <div class="filter-select__option">
+                                            <input data-value="Адрес 3" type="radio" name="country">
+                                            <label>Адрес 3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fg _full filter-select">
+                                <label>Фактический адрес</label>
+                                <div class="m-check">
+                                    <input type="checkbox">
+                                    <label>
+                                        <span>Совпадает с пропиской</span>
+                                    </label>
+                                </div>
+                                <input class="filter-select__current" type="text" placeholder="Фактический адрес">
+                                <div class="filter-select__dropdown">
+                                    <div class="filter-select__options">
+                                        <div class="filter-select__option">
+                                            <input data-value="Адрес" type="radio" name="country">
+                                            <label>Адрес</label>
+                                        </div>
+                                        <div class="filter-select__option">
+                                            <input data-value="Адрес 2" type="radio" name="country">
+                                            <label>Адрес 2</label>
+                                        </div>
+                                        <div class="filter-select__option">
+                                            <input data-value="Адрес 3" type="radio" name="country">
+                                            <label>Адрес 3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-group _full">
+                                <div class="text16 bold-text">
+                                    Ранее был заёмщиком
+                                </div>
+                                <div class="m-check">
+                                    <input type="checkbox">
+                                    <label>
+                                        <span>Да</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
